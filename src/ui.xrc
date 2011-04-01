@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource version="2.3.0.1" xmlns="http://www.wxwindows.org/wxxrc">
+  <object class="wxFrame" name="mainFrame">
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="tlxNasaLogo">
+              <bitmap>img/nasa.png</bitmap>
+            </object>
+          </object>
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxBoxSizer">
+              <object class="sizeritem">
+                <object class="wxStaticText" name="tlxAppTitleTxt">
+                  <label>Task Load Index</label>
+                  <font>
+                    <size>22</size>
+                    <style>normal</style>
+                    <weight>bold</weight>
+                    <underlined>0</underlined>
+                    <family>default</family>
+                    <face>Ubuntu</face>
+                    <encoding>UTF-8</encoding>
+                  </font>
+                </object>
+                <option>1</option>
+                <border>5</border>
+              </object>
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <object class="wxStaticText" name="tlxAppSTitleTxt">
+                  <label>Workload assessment without the work!</label>
+                  <font>
+                    <size>11</size>
+                    <style>italic</style>
+                    <weight>normal</weight>
+                    <underlined>0</underlined>
+                    <family>default</family>
+                    <face>Ubuntu</face>
+                    <encoding>UTF-8</encoding>
+                  </font>
+                </object>
+              </object>
+            </object>
+            <flag>wxALIGN_CENTRE_VERTICAL</flag>
+          </object>
+        </object>
+        <option>0</option>
+        <flag>wxTOP|wxBOTTOM|wxLEFT</flag>
+        <border>5</border>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticLine" name="hLine1"/>
+        <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+        <border>2</border>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <object class="sizeritem">
+            <object class="wxStaticText" name="part1Txt">
+              <label>Part 1: </label>
+              <font>
+                <size>13</size>
+                <style>italic</style>
+                <weight>bold</weight>
+                <underlined>0</underlined>
+                <family>default</family>
+                <face>Ubuntu</face>
+                <encoding>UTF-8</encoding>
+              </font>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText" name="part1DescrTxt">
+              <label>For each pair, select the factor that provides the most\nworkload variation during the task</label>
+              <font>
+                <size>13</size>
+                <style>italic</style>
+                <weight>normal</weight>
+                <underlined>0</underlined>
+                <family>default</family>
+                <face>Ubuntu</face>
+                <encoding>UTF-8</encoding>
+              </font>
+            </object>
+          </object>
+          <orient>wxHORIZONTAL</orient>
+        </object>
+        <option>0</option>
+        <flag>wxTOP|wxLEFT</flag>
+        <border>5</border>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <object class="sizeritem">
+            <object class="wxGridSizer">
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoPD1">
+                  <label>PD</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoMD1">
+                  <label>MD</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxRIGHT|wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoTD1">
+                  <label>TD</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoMD2">
+                  <label>MD</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxRIGHT|wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoOP1">
+                  <label>OP</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoMD3">
+                  <label>MD</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoFR1">
+                  <label>FR</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoMD4">
+                  <label>MD</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoEF1">
+                  <label>EF</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoMD5">
+                  <label>MD</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <cols>2</cols>
+              <rows>2</rows>
+              <vgap>0</vgap>
+              <hgap>0</hgap>
+            </object>
+            <option>1</option>
+            <border>5</border>
+          </object>
+          <object class="sizeritem">
+            <option>0</option>
+            <flag>wxALL|wxEXPAND</flag>
+            <border>5</border>
+            <object class="wxStaticLine" name="vertLine1">
+              <style>wxLI_VERTICAL</style>
+              <pos>-1,-1</pos>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxGridSizer">
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoTD2">
+                  <label>TD</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoPD2">
+                  <label>PD</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoOP2">
+                  <label>OP</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoPD3">
+                  <label>PD</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoFR2">
+                  <label>FR</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoPD4">
+                  <label>PD</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoEF2">
+                  <label>EF</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoPD5">
+                  <label>PD</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoTD3">
+                  <label>TD</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoOP3">
+                  <label>OP</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <cols>2</cols>
+              <rows>2</rows>
+              <vgap>0</vgap>
+              <hgap>0</hgap>
+            </object>
+            <option>1</option>
+            <border>5</border>
+          </object>
+          <object class="sizeritem">
+            <option>0</option>
+            <flag>wxALL|wxEXPAND</flag>
+            <border>5</border>
+            <object class="wxStaticLine" name="vertLine2">
+              <style>wxLI_VERTICAL</style>
+              <pos>-1,-1</pos>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <option>1</option>
+            <flag/>
+            <border>5</border>
+            <object class="wxGridSizer">
+              <rows>5</rows>
+              <cols>2</cols>
+              <vgap>0</vgap>
+              <hgap>0</hgap>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoTD4">
+                  <label>TD</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoFR3">
+                  <label>FR</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoTD5">
+                  <label>TD</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoEF3">
+                  <label>EF</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoOP4">
+                  <label>OP</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoFR4">
+                  <label>FR</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoOP5">
+                  <label>OP</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoEF4">
+                  <label>EF</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoEF5">
+                  <label>EF</label>
+                  <style>wxRB_GROUP</style>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxRadioButton" name="rdoFR5">
+                  <label>FR</label>
+                  <XRCED>
+                    <events>EVT_RADIOBUTTON</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+            </object>
+          </object>
+          <label>Factor Comparisons</label>
+          <orient>wxHORIZONTAL</orient>
+        </object>
+        <option>0</option>
+        <flag>wxTOP|wxALIGN_CENTRE</flag>
+        <border>10</border>
+      </object>
+      <object class="spacer">
+        <size>10</size>
+        <border>0</border>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <object class="sizeritem">
+            <object class="wxStaticText" name="part2Txt">
+              <label>Part 2: </label>
+              <font>
+                <size>13</size>
+                <style>italic</style>
+                <weight>bold</weight>
+                <underlined>0</underlined>
+                <family>default</family>
+                <face>Ubuntu</face>
+                <encoding>UTF-8</encoding>
+              </font>
+            </object>
+          </object>
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticText" name="part2DescrTxt">
+              <label>Rate each factor's contribution to the task's workload</label>
+              <font>
+                <size>13</size>
+                <style>italic</style>
+                <weight>normal</weight>
+                <underlined>0</underlined>
+                <family>default</family>
+                <face>Ubuntu</face>
+                <encoding>UTF-8</encoding>
+              </font>
+            </object>
+          </object>
+        </object>
+        <option>0</option>
+        <flag>wxTOP|wxLEFT</flag>
+        <border>5</border>
+      </object>
+      <object class="spacer">
+        <size>4</size>
+      </object>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <object class="sizeritem">
+            <option>0</option>
+            <flag>wxALL</flag>
+            <border>5</border>
+            <object class="wxStaticText" name="mentalTxt">
+              <label>Mental Demand</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+            <border>5</border>
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <object class="wxStaticText" name="m_staticText5">
+                  <label>Low</label>
+                  <font>
+                    <style>italic</style>
+                    <weight>normal</weight>
+                    <underlined>0</underlined>
+                    <family>default</family>
+                  </font>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <object class="wxSlider" name="mentalMagSlider">
+                  <size>300,-1</size>
+                  <value>50</value>
+                  <min>0</min>
+                  <max>100</max>
+                  <style>wxSL_HORIZONTAL</style>
+                  <XRCED>
+                    <events>EVT_SCROLL</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText4">
+                  <font>
+                    <family>default</family>
+                    <style>italic</style>
+                    <weight>normal</weight>
+                    <underlined>0</underlined>
+                  </font>
+                  <label>High</label>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <option>0</option>
+            <flag>wxALL</flag>
+            <border>5</border>
+            <object class="wxStaticText" name="physicalTxt">
+              <label>Physical Demand</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+            <border>5</border>
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText51">
+                  <font>
+                    <family>default</family>
+                    <style>italic</style>
+                    <weight>normal</weight>
+                    <underlined>0</underlined>
+                  </font>
+                  <label>Low</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxSlider" name="physicalMagSlider">
+                  <size>300,-1</size>
+                  <value>50</value>
+                  <min>0</min>
+                  <max>100</max>
+                  <style>wxSL_HORIZONTAL</style>
+                  <XRCED>
+                    <events>EVT_SCROLL</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText41">
+                  <font>
+                    <family>default</family>
+                    <style>italic</style>
+                    <weight>normal</weight>
+                    <underlined>0</underlined>
+                  </font>
+                  <label>High</label>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <option>0</option>
+            <flag>wxALL</flag>
+            <border>5</border>
+            <object class="wxStaticText" name="temporalTxt">
+              <label>Temporal Demand</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+            <border>5</border>
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText511">
+                  <font>
+                    <family>default</family>
+                    <style>italic</style>
+                    <weight>normal</weight>
+                    <underlined>0</underlined>
+                  </font>
+                  <label>Low</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxSlider" name="temporalMagSlider">
+                  <size>300,-1</size>
+                  <value>50</value>
+                  <min>0</min>
+                  <max>100</max>
+                  <style>wxSL_HORIZONTAL</style>
+                  <XRCED>
+                    <events>EVT_SCROLL</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText411">
+                  <font>
+                    <family>default</family>
+                    <style>italic</style>
+                    <weight>normal</weight>
+                    <underlined>0</underlined>
+                  </font>
+                  <label>High</label>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <option>0</option>
+            <flag>wxALL</flag>
+            <border>5</border>
+            <object class="wxStaticText" name="perfTxt">
+              <label>Performance</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+            <border>5</border>
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText5111">
+                  <font>
+                    <family>default</family>
+                    <style>italic</style>
+                    <weight>normal</weight>
+                    <underlined>0</underlined>
+                  </font>
+                  <label>Low</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxSlider" name="perfMagSlider">
+                  <size>300,-1</size>
+                  <value>50</value>
+                  <min>0</min>
+                  <max>100</max>
+                  <style>wxSL_HORIZONTAL</style>
+                  <XRCED>
+                    <events>EVT_SCROLL</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText4111">
+                  <font>
+                    <family>default</family>
+                    <style>italic</style>
+                    <weight>normal</weight>
+                    <underlined>0</underlined>
+                  </font>
+                  <label>High</label>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <option>0</option>
+            <flag>wxALL</flag>
+            <border>5</border>
+            <object class="wxStaticText" name="effortTxt">
+              <label>Effort</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+            <border>5</border>
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText51111">
+                  <font>
+                    <family>default</family>
+                    <style>italic</style>
+                    <weight>normal</weight>
+                    <underlined>0</underlined>
+                  </font>
+                  <label>Low</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxSlider" name="effortMagSlider">
+                  <size>300,-1</size>
+                  <value>50</value>
+                  <min>0</min>
+                  <max>100</max>
+                  <style>wxSL_HORIZONTAL</style>
+                  <XRCED>
+                    <events>EVT_SCROLL</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText41111">
+                  <font>
+                    <family>default</family>
+                    <style>italic</style>
+                    <weight>normal</weight>
+                    <underlined>0</underlined>
+                  </font>
+                  <label>High</label>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <option>0</option>
+            <flag>wxALL</flag>
+            <border>5</border>
+            <object class="wxStaticText" name="frustrTxt">
+              <label>Frustration</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+            <border>5</border>
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText511111">
+                  <font>
+                    <family>default</family>
+                    <style>italic</style>
+                    <weight>normal</weight>
+                    <underlined>0</underlined>
+                  </font>
+                  <label>Low</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxSlider" name="frustrMagSlider">
+                  <size>300,-1</size>
+                  <value>50</value>
+                  <min>0</min>
+                  <max>100</max>
+                  <style>wxSL_HORIZONTAL</style>
+                  <XRCED>
+                    <events>EVT_SCROLL</events>
+                    <assign_var>1</assign_var>
+                  </XRCED>
+                </object>
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+              </object>
+              <object class="sizeritem">
+                <option>0</option>
+                <flag>wxALL</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText411111">
+                  <font>
+                    <family>default</family>
+                    <style>italic</style>
+                    <weight>normal</weight>
+                    <underlined>0</underlined>
+                  </font>
+                  <label>High</label>
+                </object>
+              </object>
+            </object>
+          </object>
+          <cols>2</cols>
+          <rows>7</rows>
+          <vgap>0</vgap>
+          <hgap>0</hgap>
+          <growablecols/>
+          <growablerows/>
+        </object>
+        <option>1</option>
+        <flag>wxBOTTOM|wxLEFT|wxRIGHT</flag>
+        <border>10</border>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticLine" name="hLine2"/>
+        <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+        <border>2</border>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <object class="sizeritem">
+            <object class="wxStaticText" name="scoreDescrTxt">
+              <label>Workload Score:</label>
+              <font>
+                <size>16</size>
+                <style>normal</style>
+                <weight>normal</weight>
+                <underlined>0</underlined>
+                <family>default</family>
+                <face>Ubuntu</face>
+                <encoding>UTF-8</encoding>
+              </font>
+            </object>
+            <flag>wxALIGN_CENTRE</flag>
+          </object>
+          <object class="spacer">
+            <size>5</size>
+            <flag>wxALIGN_CENTRE</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText" name="scoreTxt">
+              <label>0</label>
+              <font>
+                <size>20</size>
+                <style>normal</style>
+                <weight>bold</weight>
+                <underlined>0</underlined>
+                <family>default</family>
+                <face>Ubuntu</face>
+                <encoding>UTF-8</encoding>
+              </font>
+              <XRCED>
+                <assign_var>1</assign_var>
+              </XRCED>
+            </object>
+            <flag>wxALIGN_CENTRE_VERTICAL</flag>
+          </object>
+          <orient>wxHORIZONTAL</orient>
+        </object>
+        <option>0</option>
+        <flag>wxTOP|wxBOTTOM|wxALIGN_CENTRE_HORIZONTAL</flag>
+        <border>10</border>
+        <ratio>0</ratio>
+      </object>
+    </object>
+    <title>NASA-TLX</title>
+    <style>wxCAPTION|wxCLOSE_BOX|wxMINIMIZE_BOX|wxTAB_TRAVERSAL</style>
+  </object>
+</resource>

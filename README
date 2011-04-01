@@ -1,0 +1,15 @@
+nasa-tlx : NASA Task Load Index (TLX) calculator
+
+This program calculates the NASA task load index (TLX) as published by S. Hart
+circa 1985. It uses the weighted average method, as opposed to more recent
+versions of the index that dispose of the factor weights. It's implemented in
+Python and makes use of wxWidgets/wxPython for the user interface. The only
+external library required to run the program is wxPython.
+
+More to come, if and when time permits.
+
+Jonathan Polom <jmpolom@wayne.edu>
+28 Mar 2011
+
+SEE 'COPYING' FOR GNU GENERAL PUBLIC LICENSE TERMS
+Copyright (C) 2011 Jonathan Polom <jmpolom@wayne.edu>
