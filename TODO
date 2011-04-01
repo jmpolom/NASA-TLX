@@ -1,5 +1,7 @@
-* Updated documentation in README, including usage example
-* Graphical analysis/presentation of factor weights and magnitudes
-* Tooltips for factor abbreviation full text
-* Tab forward through UI input elements
-* TEST CASES
+[x] Updated documentation in README, including usage example
+[ ] Install script via setuptools
+[ ] Relative path support for XRC
+[ ] Graphical analysis/presentation of factor weights and magnitudes
+[ ] Tooltips for factor abbreviation full text
+[ ] Tab forward through UI input elements
+[ ] Unit test case(s)

@@ -1,15 +1,55 @@
-nasa-tlx : NASA Task Load Index (TLX) calculator
+NAME
+----
+    nasa-tlx : NASA Task Load Index (TLX) calculator
 
-This program calculates the NASA task load index (TLX) as published by S. Hart
-circa 1985. It uses the weighted average method, as opposed to more recent
-versions of the index that dispose of the factor weights. It's implemented in
-Python and makes use of wxWidgets/wxPython for the user interface. The only
-external library required to run the program is wxPython.
+DESCRIPTION
+-----------
+    This program calculates the NASA task load index (TLX) as published by 
+    S. Hart circa 1985. It uses the weighted average method, as opposed to more
+    recent versions of the index that dispose of the factor weights. It's
+    implemented in Python and makes use of wxWidgets/wxPython for the user
+    interface. The only external library required to run the program is
+    wxPython.
 
-More to come, if and when time permits.
+SOFTWARE DEPENDENCIES
+---------------------
+    Python
+    wxPython
 
-Jonathan Polom <jmpolom@wayne.edu>
-28 Mar 2011
+INSTALLATION
+------------
+    No installation is required at this time. The only method of running the
+    program currently is directly from the 'src' directory in the distributed
+    tarball.
 
-SEE 'COPYING' FOR GNU GENERAL PUBLIC LICENSE TERMS
-Copyright (C) 2011 Jonathan Polom <jmpolom@wayne.edu>
+USAGE
+-----
+    Calculating a TLX score with this program is extremely easy. First, start
+    the program from the 'src' directory in the contents extracted from the
+    distributed tarball:
+    
+        $ ./main.py
+    
+    The 'main.py' script will start a window titled NASA-TLX containing
+    controls to adjust calculation parameters for the TLX score. The first
+    section adjusts factor weights based on pair comparison of individual
+    factors. The second section adjusts factor magnitudes. These sections and
+    their use are described by S. Hart et. al., 1988.
+    
+    The program calculates the TLX score each time a factor is selected or
+    magnitude changed.
+    
+    NOTE: at this time 'main.py' must be started from the 'src' directory.
+
+AUTHOR
+------
+    Jonathan Polom <jmpolom@wayne.edu>
+
+DATE
+----
+    28 Mar 2011
+
+COPYING
+-------
+    SEE 'COPYING' FOR GNU GENERAL PUBLIC LICENSE TERMS
+    Copyright (C) 2011 Jonathan Polom <jmpolom@wayne.edu>
