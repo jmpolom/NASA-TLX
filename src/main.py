@@ -1,15 +1,19 @@
 #!/usr/bin/python
 
-#
-# NASA-TLX python implementation with wxWidgets
-#
-# Copyright (C) 2011 Jon Polom <jmpolom@wayne.edu>
-#
-# See 'COPYING' in the src directory for license terms
-#
+"""
+NASA-TLX implementation with wxWidgets
+
+Copyright (C) 2011 Jon Polom <jmpolom@wayne.edu>
+See 'COPYING' in the src directory for license terms
+"""
 
 import wx
+from datetime import date
 from ui import xrcmainFrame
+
+__author__ = "Jonathan Polom <jmpolom@wayne.edu>"
+__date__ = date(2011, 4, 1)
+__version__ = '0.1'
 
 class tlxMainFrame(xrcmainFrame):
 
